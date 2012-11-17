@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1352938623948
+Build-Jdk: 1.6.0_33
+Built-By: jason.hoppes
+Bundle-Activator: gov.samhsa.cms.consent.mongo.repository.osgi.Activator
+Bundle-ClassPath: .,
+ org.osgi.core-5.0.0.jar,
+ dozer-osgi-5.3.2.jar
+Bundle-Description: Mongo repositopry for SAMHSA Consent Management Syst
+ em
+Bundle-ManifestVersion: 2
+Bundle-Name: MongoDB Repository for Consent Managment
+Bundle-SymbolicName: gov.samhsa.ds4p.cms.consent.core;singleton:=true
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile|runtime
+Embedded-Artifacts: org.osgi.core-5.0.0.jar;g="org.osgi";a="org.osgi.cor
+ e";v="5.0.0",dozer-osgi-5.3.2.jar;g="net.sf.dozer";a="dozer-osgi";v="5.
+ 3.2",consent.domain-1.0.0.SNAPSHOT.jar;g="gov.samhsa.ds4p.cms";a="conse
+ nt.domain";v="1.0.0.SNAPSHOT",consent.domain.core-1.0.0.SNAPSHOT.jar;g=
+ "gov.samhsa.ds4p.cms";a="consent.domain.core";v="1.0.0.SNAPSHOT"
+Export-Package: gov.samhsa.ds4p.cms.consent.persist.repository;version="
+ 1.0.0"
+Import-Package: gov.samhsa.ds4p.cms.consent.domain;version="1.0.0",
+ gov.samhsa.ds4p.cms.consent.domain.repository;version="1.0.0",
+ gov.samhsa.ds4p.cms.consent.mongodb.repositories;version="1.0.0",
+ org.osgi.framework;version="1.7.0"
+Tool: Bnd-1.50.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ OSGi/Minimum-1.2,
+ CDC-1.1/Foundation-1.1
+

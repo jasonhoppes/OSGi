@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CMS Domain Core
+Bundle-SymbolicName: gov.samhsa.ds4p.cms.consent.domain.core;singleton:=true
+Bundle-Version: 1.0.0.SNAPSHOT
+Bundle-Activator: gov.samhsa.ds4p.cms.consent.domain.core.osgi.Activator
+Bundle-Vendor: FEi  Systems
+Import-Package: org.osgi.framework;version="1.7.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ CDC-1.1/Foundation-1.1,
+ OSGi/Minimum-1.2
+Export-Package: gov.samhsa.ds4p.cms.consent.domain.core.value;version="1.0.0"
+Bundle-ActivationPolicy: lazy

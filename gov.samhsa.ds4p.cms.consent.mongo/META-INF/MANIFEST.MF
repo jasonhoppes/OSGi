@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MongoDB Persistence
+Bundle-SymbolicName: gov.samhsa.ds4p.cms.consent.mongo
+Bundle-Version: 1.0.0.SNAPSHOT
+Bundle-Activator: gov.samhsa.ds4p.cms.consent.mongodb.osgi.Activator
+Bundle-Vendor: FEi Systems
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ CDC-1.1/Foundation-1.1,
+ OSGi/Minimum-1.2
+Import-Package: gov.samhsa.ds4p.cms.consent.domain.core.value;version="1.0.0",
+ org.osgi.framework;version="1.3.0",
+ org.springframework.beans.factory.config;version="3.1.1.RELEASE",
+ org.springframework.context.annotation;version="3.1.1.RELEASE",
+ org.springframework.data.annotation;version="1.3.1.RELEASE",
+ org.springframework.stereotype;version="3.1.1.RELEASE"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Export-Package: gov.samhsa.ds4p.cms.consent.mongodb.dto;version="1.0.0",
+ gov.samhsa.ds4p.cms.consent.mongodb.repositories;version="1.0.0"

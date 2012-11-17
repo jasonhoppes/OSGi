@@ -1,0 +1,27 @@
+<bindings version="2.1" 
+          xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <bindings schemaLocation="access_control-xacml-2.0-policy-schema-os.xsd" 
+              node="/xs:schema">     
+        <globalBindings fixedAttributeAsConstantProperty="false"                 
+                        collectionType="java.util.Vector"          
+                        typesafeEnumBase="xs:NCName"          
+                        choiceContentProperty="true"          
+                        typesafeEnumMemberName="generateError"          
+                        enableFailFastCheck="false"             
+                        generateIsSetMethod="false"  
+                        generateElementClass="false"        
+                        underscoreBinding="asCharInWord">                            
+        </globalBindings>     
+        <schemaBindings>       
+            <package name="gov.samhsa.ds4p.cms.xacml">         
+                <!--javadoc><![CDATA[<body>Package level documentation for generated package primer.myPo.</body>]]> 
+                </javadoc-->       
+            </package> 
+            <nameXmlTransform>
+                <elementName suffix="Element"/>
+            </nameXmlTransform>            
+        </schemaBindings>
+    </bindings>
+</bindings> 

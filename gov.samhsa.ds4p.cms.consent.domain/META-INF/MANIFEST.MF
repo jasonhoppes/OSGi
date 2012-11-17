@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Consent Management Domain
+Bundle-SymbolicName: gov.samhsa.ds4p.cms.consent.domain;singleton:=true
+Bundle-Version: 1.0.0.SNAPSHOT
+Bundle-Activator: gov.samhsa.ds4p.cms.consent.domain.osgi.Activator
+Bundle-Vendor: FEi Systems
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6,
+ CDC-1.1/Foundation-1.1,
+ OSGi/Minimum-1.2
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Import-Package: gov.samhsa.ds4p.cms.consent.domain.core.value;version="1.0.0",
+ org.osgi.framework;version="[1.7.0,2.0.0)",
+ org.springframework.beans.factory.config;version="3.1.1.RELEASE",
+ org.springframework.context.annotation;version="3.1.1.RELEASE",
+ org.springframework.data.annotation;version="1.3.1.RELEASE",
+ org.springframework.stereotype;version="3.1.1.RELEASE"
+Export-Package: gov.samhsa.ds4p.cms.consent.domain;version="1.0.0",
+ gov.samhsa.ds4p.cms.consent.domain.factory;version="1.0.0",
+ gov.samhsa.ds4p.cms.consent.domain.repository;version="1.0.0"

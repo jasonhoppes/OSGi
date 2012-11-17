@@ -1,0 +1,5 @@
+#surefire
+#Thu Nov 15 15:27:44 EST 2012
+user.dir=C\:\\Users\\jason.hoppes\\projects\\cds\\gov.samhsa.cms.consent.mongo.repository
+localRepository=C\:\\Users\\jason.hoppes\\.m2\\repository
+basedir=C\:\\Users\\jason.hoppes\\projects\\cds\\gov.samhsa.cms.consent.mongo.repository
